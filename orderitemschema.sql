@@ -152,6 +152,7 @@ INSERT INTO "ORDER" (oid, cid, "DATE") VALUES(14,3, sysdate-360);
 INSERT INTO "ORDER" (oid, cid, "DATE") VALUES(15, 7, sysdate-720);
 INSERT INTO "ORDER" (oid, cid, "DATE") VALUES(16,4, sysdate-360);
 INSERT INTO "ORDER" (oid, cid, "DATE") VALUES(17,5, sysdate-360);
+INSERT INTO "ORDER" (oid, cid, "DATE") VALUES(18,1, sysdate);
 
 INSERT INTO product (PID, PRODUCTNAME,  PRICE) VALUES(1, 'Computer', 50);
 INSERT INTO product (PID, PRODUCTNAME,  PRICE) VALUES(2, 'Trousers',  80);
@@ -223,6 +224,7 @@ INSERT INTO LINEITEM (LID, OID, PID, "totalprice", "NUMBER") VALUES(null, 14, 1,
 INSERT INTO LINEITEM (LID, OID, PID, "totalprice", "NUMBER") VALUES(null, 15, 1, 1000, 20);
 INSERT INTO LINEITEM (LID, OID, PID, "totalprice", "NUMBER") VALUES(null, 16, 1, 1000, 20);
 INSERT INTO LINEITEM (LID, OID, PID, "totalprice", "NUMBER") VALUES(null, 17, 1, 100, 2);
+INSERT INTO LINEITEM (LID, OID, PID, "totalprice", "NUMBER") VALUES(null, 18, 11, 100, 10);
 select count(*) CUSTOMER_count from CUSTOMER;
 select count(*) product_count from product;
 select count(*) ORDER_count from "ORDER";
